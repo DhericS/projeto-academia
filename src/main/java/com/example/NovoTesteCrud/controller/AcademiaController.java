@@ -2,6 +2,7 @@ package com.example.NovoTesteCrud.controller;
 
 import com.example.NovoTesteCrud.domain.acad.Academia;
 import com.example.NovoTesteCrud.domain.acad.RequestAcademia;
+import com.example.NovoTesteCrud.domain.acad.dto.AcademiaDTO;
 import com.example.NovoTesteCrud.service.AcademiaService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,8 +19,11 @@ public class AcademiaController {
     private AcademiaService academiaService;
 
     @GetMapping
-    public ResponseEntity<List<Academia>> getAllAcademias() {
-        return ResponseEntity.ok(academiaService.getAllAcademias());
+    public ResponseEntity<List<AcademiaDTO>> getAllAcademias() {
+        List<AcademiaDTO> academias = academiaService.getAllAcademias().stream()
+                .map(AcademiaDTO::new)
+                .toList();
+        return ResponseEntity.ok(academias);
     }
 
     @PostMapping

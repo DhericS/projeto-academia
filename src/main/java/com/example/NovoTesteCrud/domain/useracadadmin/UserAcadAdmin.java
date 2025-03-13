@@ -15,21 +15,21 @@ public class UserAcadAdmin {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank
+    @NotBlank(message = "O nome é obrigatório")
     private String name;
 
-    @Email
-    @NotBlank
+    @Email(message = "E-mail inválido")
+    @NotBlank(message = "O e-mail é obrigatório")
     private String email;
 
-    @NotBlank
+    @NotBlank(message = "A senha é obrigatória")
     private String password;
 
-    @NotBlank
+    @NotBlank(message = "O CNPJ é obrigatório")
     @Column(name = "cnpj", unique = true, length = 14)
     private String cnpj;
 
-    @NotBlank
+    @NotBlank(message = "O telefone é obrigatório")
     private String telefone;
 
     @OneToOne

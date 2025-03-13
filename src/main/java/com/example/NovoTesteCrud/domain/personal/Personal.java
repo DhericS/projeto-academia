@@ -14,20 +14,20 @@ public class Personal {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank
+    @NotBlank(message = "O nome é obrigatório")
     private String name;
 
-    @Email
-    @NotBlank
+    @NotBlank(message = "O e-mail é obrigatório")
+    @Email(message = "E-mail inválido")
     private String email;
 
-    @NotBlank
+    @NotBlank(message = "A senha é obrigatória")
     private String password;
 
-    @NotBlank
+    @NotBlank(message = "O telefone é obrigatório")
     private String telefone;
 
-    @NotBlank
+    @NotBlank(message = "O CREF é obrigatório")
     @Column(unique = true)
     private String cref;
 }
