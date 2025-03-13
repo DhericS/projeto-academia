@@ -1,4 +1,4 @@
-package com.example.NovoTesteCrud.domain.acad.dto;
+package com.example.NovoTesteCrud.dto;
 
 import com.example.NovoTesteCrud.domain.acad.Academia;
 import com.example.NovoTesteCrud.domain.atvd.Atividade;

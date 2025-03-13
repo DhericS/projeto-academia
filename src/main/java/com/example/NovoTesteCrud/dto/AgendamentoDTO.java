@@ -1,4 +1,4 @@
-package com.example.NovoTesteCrud.domain.agendamento.dto;
+package com.example.NovoTesteCrud.dto;
 
 import com.example.NovoTesteCrud.domain.agendamento.Agendamento;
 

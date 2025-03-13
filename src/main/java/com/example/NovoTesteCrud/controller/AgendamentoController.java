@@ -1,6 +1,6 @@
 package com.example.NovoTesteCrud.controller;
 
-import com.example.NovoTesteCrud.domain.agendamento.dto.AgendamentoDTO;
+import com.example.NovoTesteCrud.dto.AgendamentoDTO;
 import com.example.NovoTesteCrud.domain.agendamento.RequestAgendamento;
 import com.example.NovoTesteCrud.service.AgendamentoService;
 import jakarta.validation.Valid;

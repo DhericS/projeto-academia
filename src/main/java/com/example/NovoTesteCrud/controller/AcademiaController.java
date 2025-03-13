@@ -2,7 +2,7 @@ package com.example.NovoTesteCrud.controller;
 
 import com.example.NovoTesteCrud.domain.acad.Academia;
 import com.example.NovoTesteCrud.domain.acad.RequestAcademia;
-import com.example.NovoTesteCrud.domain.acad.dto.AcademiaDTO;
+import com.example.NovoTesteCrud.dto.AcademiaDTO;
 import com.example.NovoTesteCrud.service.AcademiaService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
