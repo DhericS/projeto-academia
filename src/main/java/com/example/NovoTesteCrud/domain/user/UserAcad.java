@@ -14,7 +14,8 @@ import lombok.*;
 
 public class UserAcad {
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @NotBlank
     private String name;
@@ -22,8 +23,10 @@ public class UserAcad {
     private String email;
     @NotBlank
     private String senha;
+    @NotBlank
+    private String telefone;
 
-    public UserAcad(RequestUserAcad requestUserAcad){
+    public UserAcad(RequestUserAcad requestUserAcad) {
         this.name = requestUserAcad.name();
         this.email = requestUserAcad.email();
         this.senha = requestUserAcad.senha();

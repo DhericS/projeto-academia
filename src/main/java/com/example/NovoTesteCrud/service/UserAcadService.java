@@ -34,6 +34,7 @@ public class UserAcadService {
             userAcad.setName(data.name());
             userAcad.setEmail(data.email());
             userAcad.setSenha(data.senha());
+            userAcad.setTelefone(data.telefone());
             return userAcad;
         } else {
             throw new EntityNotFoundException("Usuário não encontrado!");
